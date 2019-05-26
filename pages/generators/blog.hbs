@@ -1,0 +1,20 @@
+{{>header}}
+
+
+	<div class="container-fluid">
+
+        {{#with blog_post}}
+        <div class="row {{display_options}}">
+            <div class="col-12">
+                <h1>{{title}}</h1>
+                <h2>{{tagline}}</h2>
+                <h3>{{date}}</h3>
+                {{{post}}}
+            </div>
+        </div>
+		{{/with}}
+
+	</div>
+
+
+{{>footer}}

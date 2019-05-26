@@ -1,0 +1,20 @@
+{
+	"name": "enduro_new_project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "assets/vendor/enduro/index.js",
+	"scripts": {
+		"start": "node_modules/.bin/enduro start"
+	},
+	"author": "author goes here",
+	"license": "MIT",
+	"dependencies": {
+		"enduro": "*",
+		"enduro_pell": "^1.1.2"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"enduro_quill": "^1.0.6"
+	}
+}

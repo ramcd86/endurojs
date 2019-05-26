@@ -1,0 +1,34 @@
+{{>header}}
+
+
+	<div class="container-fluid">
+	{{!-- intro --}}
+	{{#with first_slide}}
+	{{/with}}
+	<div class="row">
+	<div id="testId"></div>
+			{{#each instruction_points}}
+				<section class="screen {{display_options}} color{{@index}}"
+					style="
+					box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+					position: relative;
+					z-index: {{@index}}
+					"
+				>
+					<div class="center_block">
+						<p>{{date}}</p>
+						<p class="huge">{{header}}</p>
+						<p>{{tagline}}</p>
+						<a target="_blank" class="button" href="{{link}}">Learn more</a>
+						{{image}}
+						{{displayOptions}}
+					</div>
+				</section>
+			{{/each}}
+	</div>
+		{{#with so_much_more_block}}
+		{{/with}}
+	</div>
+
+
+{{>footer}}
