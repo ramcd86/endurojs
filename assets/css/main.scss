@@ -3,9 +3,16 @@
 @import './typography/typography';
 @import './themes/themes';
 
+// Components
 @import './components/footer';
 @import './components/header';
+
+// Pages
 @import './pages/index';
+
+// Blocks
+@import './blocks/post-block';
+
 
 body {
     background-color: $black;
