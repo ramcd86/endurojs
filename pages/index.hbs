@@ -1,31 +1,27 @@
 {{>header}}
 
 
-	<div class="container-fluid container--index">
-	{{!-- intro --}}
-	{{#with first_slide}}
-	{{/with}}
+<div class="container-fluid container--index">
 	<div class="container">
-	<div class="row">
-	<div id="testId"></div>
+		
+		<div class="row">
 			{{#each instruction_points}}
 				<section class="container--post-block {{{display_options}}}">
-					<div class="content-container">
-						
-						
-
-						<h1>{{header}}</h1>
-						<h3><i class="fab fa-readme"></i>  {{tagline}}</h3>
-						<h4><i class="far fa-clock"></i> {{published_on}}</date>
-						<a target="_blank" class="button" href="{{link}}">Learn more</a>
+					<div class="bg-container">
+						<div class="gradient-container">
+							<div class="content-container">
+								<h1>{{header}}</h1>
+								<h3><i class="fas fa-feather-alt"></i> {{tagline}}</h3>
+								<h4><i class="far fa-clock"></i> {{published_on}}</date>
+							</div>
+						</div>
 					</div>
 				</section>
 			{{/each}}
+		</div>
+		
 	</div>
-	</div>
-
-
-	</div>
+</div>
 
 
 {{>footer}}

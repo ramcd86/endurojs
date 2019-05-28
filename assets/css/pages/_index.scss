@@ -1,4 +1,19 @@
 .container--index {
     width: 100%;
     display: block;
+    .container {
+        .space-bar {
+            display: block;
+            height: 1px;
+            border-bottom: 5px solid $shadow;
+            margin: {
+                top: 40px;
+                bottom: 40px;
+                left: 10px;
+                ight: 10px;
+            }
+            width: calc(100% - 20px);
+        }
+
+    }
 }

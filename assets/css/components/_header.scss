@@ -12,7 +12,7 @@
             right: 10px;
             top: 70px;
         }
-        border-bottom: 1px dotted $smoke;
+        // border-bottom: 1px dotted $smoke;
         transition: color 0.3s ease;
         &:hover {
             animation: drop_border 0.2s;
