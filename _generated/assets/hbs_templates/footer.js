@@ -1,3 +1,0 @@
-define(["handlebars"], function(Handlebars) { return Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "	<div class=\"container-fluid container--header\">\n		<div class=\"container\">\n		<div class=\"row\">\n			<div class=\"col-4\">\n\n			</div>\n			<div class=\"col-4 text-center\">\n				<h2 class=\"page-title\">of Bread and Blood</h2>\n			</div>\n			<div class=\"col-4 text-right\">\n				<span class=\"nav-items\">about us</span>\n				<span class=\"nav-items\">contact us</span>\n			</div>\n		</div>\n		</div>\n\n	</div>\n		<script type=\"text/javascript\" src=\"./assets/js/main.js\"></script>\n	</body>\n</html>";
-},"useData":true}); });

@@ -1,45 +1,30 @@
 .container--header {
-    background-color: $dark-base;
     width: 100%;
     display: block;
-    min-height: 120px;
+    min-height: 160px;
     .page-title {
-        font-family: $font-headers;
-        color: $shadow;
-        text-shadow: 0px 1px 3px #000;
-        font-size: 36px;
-        line-height: 29px;
+        color: $dark-base;
+        font-size: 44px;
         display: inline-block;
+        font-weight: 900;
         padding: {
             left: 10px;
             right: 10px;
-            top: 40px;
+            top: 70px;
         }
-        border-bottom: 0px solid $smoke;
+        border-bottom: 1px dotted $smoke;
         transition: color 0.3s ease;
         &:hover {
             animation: drop_border 0.2s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
-            color: #fff;
+            color: $strawberry;
             @keyframes drop_border {
                 0% {
-                    border-bottom: 1px solid $strawberry;
-                }
-                20% {
-                    border-bottom: 2px solid $strawberry;
-                }
-                40% {
-                    border-bottom: 3px solid $strawberry;
-                }
-                60% {
-                    border-bottom: 4px solid $strawberry;
-                }
-                80% {
-                    border-bottom: 5px solid $strawberry;
+                    border-bottom: 1px solid $smoke;
                 }
                 100% {
-                    border-bottom: 6px solid $strawberry;
+                    border-bottom: 30px solid $mauve;
                 }
             }
         }
@@ -47,7 +32,7 @@
     }
     .nav-items {
         display: inline-block;
-        color: $shadow;
+        color: $white;
         text-shadow: 0px 1px 3px #000;
         padding: { 
             left: 0px;

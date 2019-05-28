@@ -1,4 +1,90 @@
 .container--post-block {
+//     $font-size-p: 18px;
+// $font-size-h3: 22px;
+// $font-size-h2: 33px;
+// $font-size-h1: 44px;
+    cursor: pointer;
+
+    &.full-size {
+        h1 {
+            font-size: $font-size-h1;
+            margin-bottom: 0px;
+            font-weight: 900;
+        }
+        h3 {
+            font-size: $font-size-h3;
+            margin-bottom: 0px;
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+        h4 {
+            font-size: $font-size-sub;
+            margin-bottom: 0px;
+            font-weight: 700;
+            color: $mauve;
+        }
+
+    }
+    &.half-size {
+        h1 {
+            font-size: $font-size-h2;
+            margin-bottom: 0px;
+            font-weight: 900;
+
+        }
+        h3 {
+            font-size: $font-size-p;
+            margin-bottom: 0px;
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+        h4 {
+            font-size: $font-size-sub;
+            margin-bottom: 0px;
+        }
+    }
+    &.third-size {
+        h1 {
+            font-size: $font-size-h3;
+            margin-bottom: 0px;
+            font-weight: 900;
+        }
+        h3 {
+            font-size: $font-size-p;
+            margin-bottom: 0px;
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+        h4 {
+            font-size: $font-size-sub;
+            margin-bottom: 0px;
+        }
+    }
+    &.quarter-size {
+        h1 {
+            font-size: $font-size-h3;
+            margin-bottom: 0px;
+            font-weight: 900;
+        }
+        h3 {
+            font-size: $font-size-p;
+            margin-bottom: 0px;
+            margin: {
+                top: 10px;
+                bottom: 10px;
+            }
+        }
+        h4 {
+            font-size: $font-size-sub;
+            margin-bottom: 0px;
+        }
+    }
     display: block;
     padding: {
         top: 10px;
@@ -6,35 +92,35 @@
         left: 10px;
         right: 10px;
     }
-    height: 70vh;
+    height: 40vh;
     position: relative;
     .content-container {
+        border: 1px dotted $smoke;
         background-size: cover;
         background-position: center;
         padding: {
             top: 30px;
-            bottom: 30px;
+            bottom: 50px;
             left: 30px;
             right: 30px;
         }
-        display: flex;
-        flex-direction: column-reverse;
+        // display: flex;
+        // flex-direction: column-reverse;
         width: 100%;
-        height: calc(70vh - 30px);
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        border-bottom: 0px solid $strawberry;
+        height: calc(40vh - 30px);
+        // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        border-bottom: 5px solid $black;
         &:hover {
-            padding-bottom: 30px;
             animation: drop_border_one 0.2s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
             @keyframes drop_border_one {
                 0% {
-                    border-bottom: 1px solid #fff;
+                    border-bottom: 5px solid $black;
                 }
                 100% {
-                    border-bottom: 15px solid $strawberry;
-                    padding-bottom: 15px;
+                    border-bottom: 30px solid $strawberry;
+                    padding-bottom: 20px;
                 }
             }
         }
