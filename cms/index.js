@@ -10,7 +10,7 @@
 			tagline: 'A little article about a few things, chief. What else?',
 			$published_on_type: 'date',
 			published_on: 'Thursday, 16 May, 2019',
-			display_options: '@@global.display.full',
+			display_options: '@@global.display.half',
 			$background_image_type: 'image',
 			background_image: 'https://i.imgur.com/aUetK.jpg',
 			$published_on_value: '2019-05-16'
@@ -30,7 +30,7 @@
 			tagline: 'How has apple farming affected us? I don\'t know.',
 			$published_on_type: 'date',
 			published_on: 'Sunday, 19 May, 2019',
-			display_options: '@@global.display.half',
+			display_options: '@@global.display.full',
 			$background_image_type: 'image',
 			background_image: 'https://i.imgur.com/wCmsm.jpg',
 			$published_on_value: '2019-05-19'

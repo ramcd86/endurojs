@@ -8,6 +8,7 @@
     &.full-size {
         h1 {
             padding-top: 10px;
+            font-family: $font-headers;
             font-size: $font-size-h1;
             margin-bottom: 0px;
             font-weight: 900;
@@ -19,6 +20,7 @@
                 top: 10px;
                 bottom: 10px;
             }
+            letter-spacing: -1px;
             i {
                 color: $strawberry
             }
@@ -35,6 +37,7 @@
     &.half-size {
         h1 {
             padding-top: 10px;
+            font-family: $font-headers;
             font-size: $font-size-h2;
             margin-bottom: 0px;
             font-weight: 900;
@@ -47,6 +50,7 @@
                 top: 10px;
                 bottom: 10px;
             }
+            letter-spacing: -1px;
             i {
                 color: $strawberry
             }
@@ -62,6 +66,7 @@
     &.third-size {
         h1 {
             padding-top: 10px;
+            font-family: $font-headers;
             font-size: $font-size-h3;
             margin-bottom: 0px;
             font-weight: 900;
@@ -73,6 +78,7 @@
                 top: 10px;
                 bottom: 10px;
             }
+            letter-spacing: -1px;
             i {
                 color: $strawberry
             }
@@ -88,6 +94,7 @@
     &.quarter-size {
         h1 {
             padding-top: 10px;
+            font-family: $font-headers;
             font-size: $font-size-h3;
             margin-bottom: 0px;
             font-weight: 900;
@@ -99,6 +106,7 @@
                 top: 10px;
                 bottom: 10px;
             }
+            letter-spacing: -1px;
             i {
                 color: $strawberry
             }
@@ -124,8 +132,7 @@
         background-size: cover;
         background-position: center;
         .gradient-container {
-            background: rgb(255,252,226);
-            background: linear-gradient(40deg, rgba(255,252,226,1) 0%, rgba(255,252,226,1) 50%, rgba(255,252,226,0.9) 100%);
+            background-color: $egg;
             .content-container {
                 border: 1px dotted rgb(204, 204, 204);
 

@@ -1,30 +1,38 @@
 .container--header {
     width: 100%;
     display: block;
-    min-height: 160px;
+    min-height: 100px;
+    background-color: $dark-base;
+    margin-bottom: 30px; 
+    border-bottom: 0px solid $strawberry;
+    border-top: 10px solid $smoke;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
+    font-weight: 100;
     .page-title {
-        color: $dark-base;
-        font-size: 44px;
+        color: $white;
+        font-size: 30px;
         display: inline-block;
         font-weight: 900;
         padding: {
             left: 10px;
             right: 10px;
-            top: 70px;
+            top: 25px;
         }
+        font-family: $font-headers;
         // border-bottom: 1px dotted $smoke;
+        letter-spacing: 0px;
         transition: color 0.3s ease;
+
         &:hover {
-            animation: drop_border 0.2s;
+            animation: drop_borders 0.2s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
-            color: $strawberry;
-            @keyframes drop_border {
+            @keyframes drop_borders {
                 0% {
-                    border-bottom: 1px solid $smoke;
+                    color: $white;
                 }
                 100% {
-                    border-bottom: 30px solid $mauve;
+                    color: $strawberry;
                 }
             }
         }
