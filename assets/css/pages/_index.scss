@@ -2,6 +2,27 @@
     width: 100%;
     display: block;
     .container {
+        .quote-block {
+            h2 {
+                margin-top: 40px;
+                display: block;
+                font-family: $font-headers;
+                font-size: $font-size-h3;
+                text-align: left;
+                letter-spacing: -1px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                display: block;
+                float: right;
+                font-family: $font-body;
+                font-size: $font-size-p;
+                text-align: right;
+                letter-spacing: -1px;
+                margin-bottom: 40px;
+                border-bottom: 5px solid $black;
+            }
+        }
         .space-bar {
             display: block;
             height: 1px;
