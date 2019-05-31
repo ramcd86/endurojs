@@ -1,3 +1,77 @@
 .container--footer {
-    
+    width: 100%;
+    display: block;
+    min-height: 300px;
+    background-color: $dark-base;
+    border-bottom: 10px solid $smoke;
+    margin-top: 100px;
+    box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
+    font-weight: 100;
+    .page-footer {
+        color: $white;
+        font-size: 30px;
+        display: inline-block;
+        font-weight: 900;
+        padding: {
+            left: 10px;
+            right: 10px;
+            top: 120px;
+        }
+        font-family: $font-headers;
+        text-shadow: 0px 1px 3px #000;
+        letter-spacing: 0px;
+        transition: color 0.3s ease;
+        i {
+            font-size: 24px;
+        }
+        &:hover {
+            animation: drop_borders 0.2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            @keyframes drop_borders {
+                0% {
+                    color: $white;
+                }
+                100% {
+                    color: $strawberry;
+                }
+            }
+        }
+        cursor: pointer;
+    }
+    .nav-items {
+        font-family: $font-headers;
+        display: inline-block;
+        color: $white;
+        text-shadow: 0px 1px 3px #000;
+        padding: { 
+            left: 0px;
+            right: 0px;
+        }
+        margin: {
+            top: 46px;
+            left: 5px;
+            right: 5px;
+        }
+        text-decoration: none;
+        line-height: 10px;
+        border-bottom: 0px solid $smoke;
+        transition: color 0.3s ease;
+        &:hover {
+            animation: drop_border 0.2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            color: #fff;
+            @keyframes drop_border {
+                0% {
+                    color: $white;
+                }
+                100% {
+                    color: $strawberry;
+                }
+            }
+        }
+        cursor: pointer;
+    }
 }
+

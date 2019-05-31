@@ -9,7 +9,9 @@ class MainComponent {
 
     init() {
         console.log(this.quotes);
-        this.quotePopulator();
+        if (this.quotesBlock) {
+            this.quotePopulator();
+        }
     }
 
     quotePopulator() {

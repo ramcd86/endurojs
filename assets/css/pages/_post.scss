@@ -1,0 +1,38 @@
+.container--post {
+    .container {
+        border-left: 1px dotted $strawberry;
+        border-right: 1px dotted $strawberry;
+        h1 {
+            margin-top: 70px;
+            display: block;
+            font-family: $font-headers;
+            font-size: $font-size-h0;
+            font-weight: 900;
+        }
+        h2 {
+            font-size: $font-size-p;
+            font-family: $font-headers;
+            color: $strawberry;
+            display: block;
+            letter-spacing: -1px;
+            i {
+                color: $strawberry
+            }
+        }
+        h3 {
+            font-size: $font-size-sub;
+            margin-bottom: 40px;
+            padding-top: 10px;
+            font-weight: 700;
+            color: $strawberry;
+        }
+        p {
+            font-family: $font-body;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+    }
+
+
+}

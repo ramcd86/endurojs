@@ -9,6 +9,7 @@
 
 // Pages
 @import './pages/index';
+@import './pages/post';
 
 // Blocks
 @import './blocks/post-block';
@@ -23,11 +24,11 @@ body {
     margin: 0;
 }
 
-.col-0 {
+.hidden {
     display: none !important;
 }
 
-.col-1 {
+.published {
     display: block;
 }
 

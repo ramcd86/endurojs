@@ -1,19 +1,19 @@
 {{>header}}
 
 
-	<div class="container-fluid">
-
+	<div class="container-fluid container--post">
+        <div class="container">
         {{#with blog_post}}
-        <div class="row {{display_options}}">
-            <div class="col-12">
-                <h1>{{title}}</h1>
-                <h2>{{tagline}}</h2>
-                <h3>{{date}}</h3>
-                {{{post}}}
+            <div class="row {{display_options}}">
+                <div class="col-10 offset-1">
+                    <h1>{{title}}</h1>
+                    <h2><i class="fas fa-feather-alt"></i> {{tagline}}</h2>
+                    <h3><i class="far fa-clock"></i> {{date}}</h3>
+                    {{{post}}}
+                </div>
             </div>
+            {{/with}}
         </div>
-		{{/with}}
-
 	</div>
 
 
