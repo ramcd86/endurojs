@@ -19,10 +19,12 @@
             top: 25px;
         }
         font-family: $font-headers;
-        // border-bottom: 1px dotted $smoke;
+        text-shadow: 0px 1px 3px #000;
         letter-spacing: 0px;
         transition: color 0.3s ease;
-
+        i {
+            font-size: 24px;
+        }
         &:hover {
             animation: drop_borders 0.2s;
             animation-iteration-count: 1;
@@ -39,6 +41,7 @@
         cursor: pointer;
     }
     .nav-items {
+        font-family: $font-headers;
         display: inline-block;
         color: $white;
         text-shadow: 0px 1px 3px #000;
@@ -47,7 +50,7 @@
             right: 0px;
         }
         margin: {
-            top: 59px;
+            top: 46px;
             left: 5px;
             right: 5px;
         }
@@ -62,22 +65,10 @@
             color: #fff;
             @keyframes drop_border {
                 0% {
-                    border-bottom: 1px solid $strawberry;
-                }
-                20% {
-                    border-bottom: 2px solid $strawberry;
-                }
-                40% {
-                    border-bottom: 3px solid $strawberry;
-                }
-                60% {
-                    border-bottom: 4px solid $strawberry;
-                }
-                80% {
-                    border-bottom: 5px solid $strawberry;
+                    color: $white;
                 }
                 100% {
-                    border-bottom: 6px solid $strawberry;
+                    color: $strawberry;
                 }
             }
         }
