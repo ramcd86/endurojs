@@ -8,7 +8,7 @@
     border-top: 10px solid $smoke;
     box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
     font-weight: 100;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         display: none;
     }
     .page-title {
@@ -92,7 +92,7 @@
     border-top: 10px solid $smoke;
     box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
     font-weight: 100;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         display: block;
     }
     .page-title {
@@ -142,8 +142,7 @@
             position: absolute;
             z-index: 10;
             top: 85px;
-            left: -50vw;
-            width: 100vw;
+            left: -15px;
             padding: {
                 top: 20px;
                 bottom: 20px;
@@ -156,6 +155,7 @@
         &:hover {
             .submenu {
                 display: block;
+                width: 100vw;
             }
         }
     }

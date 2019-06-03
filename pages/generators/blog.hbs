@@ -5,11 +5,14 @@
         <div class="container">
         {{#with blog_post}}
             <div class="row {{display_options}}">
+                <div class="col-12 offset-0 col-md-10 offset-md-1 header-image" style="background-image: url({{{background_image}}})"></div>
                 <div class="col-12 offset-0 col-md-10 offset-md-1">
                     <h1>{{title}}</h1>
                     <h2><i class="fas fa-feather-alt"></i> {{tagline}}</h2>
                     <h3><i class="far fa-clock"></i> {{date}}</h3>
-                    {{{post}}}
+                    <div class="quill-container">
+                        {{{post}}}
+                    </div>
                 </div>
             </div>
             {{/with}}
