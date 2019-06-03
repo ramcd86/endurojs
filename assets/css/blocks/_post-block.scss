@@ -54,7 +54,7 @@
                     font-weight: 900;
                 }
                 h3 {
-                    font-size: $font-size-h3;
+                    font-size: $font-size-h4;
                     margin-bottom: 0px;
                     margin: {
                         top: 10px;
@@ -63,7 +63,8 @@
                     letter-spacing: -1px;
                     font-weight: 600;
                     i {
-                        color: $strawberry
+                        color: $strawberry;
+                        font-size: $font-size-p;
                     }
                 }
                 h4 {
@@ -148,7 +149,7 @@
                     h1 {
                         padding-top: 10px;
                         font-family: $font-headers;
-                        font-size: $font-size-h3;
+                        font-size: $font-size-h4;
                         margin-bottom: 0px;
                         font-weight: 900;
                     }
@@ -162,7 +163,8 @@
                         }
                         letter-spacing: -1px;
                         i {
-                            color: $strawberry
+                            color: $strawberry;
+                            font-size: $font-size-p;
                         }
                     }
                     h4 {
@@ -183,7 +185,7 @@
                 h1 {
                     padding-top: 10px;
                     font-family: $font-headers;
-                    font-size: $font-size-h3;
+                    font-size: $font-size-h4;
                     margin-bottom: 0px;
                     font-weight: 900;
                 }
@@ -197,7 +199,8 @@
                     }
                     letter-spacing: -1px;
                     i {
-                        color: $strawberry
+                        color: $strawberry;
+                        font-size: $font-size-p;
                     }
                 }
                 h4 {
@@ -213,7 +216,7 @@
                     h1 {
                         padding-top: 10px;
                         font-family: $font-headers;
-                        font-size: $font-size-h3;
+                        font-size: $font-size-h4;
                         margin-bottom: 0px;
                         font-weight: 900;
                     }
@@ -227,7 +230,8 @@
                         }
                         letter-spacing: -1px;
                         i {
-                            color: $strawberry
+                            color: $strawberry;
+                            font-size: $font-size-p;
                         }
                     }
                     h4 {
@@ -251,7 +255,7 @@
                     h1 {
                         padding-top: 10px;
                         font-family: $font-headers;
-                        font-size: $font-size-h3;
+                        font-size: $font-size-h4;
                         margin-bottom: 0px;
                         font-weight: 900;
                     }
@@ -265,7 +269,8 @@
                         }
                         letter-spacing: -1px;
                         i {
-                            color: $strawberry
+                            color: $strawberry;
+                            font-size: $font-size-p;
                         }
                     }
                     h4 {
@@ -279,9 +284,12 @@
                 h1 {
                     padding-top: 10px;
                     font-family: $font-headers;
-                    font-size: $font-size-h3;
+                    font-size: $font-size-h4;
                     margin-bottom: 0px;
                     font-weight: 900;
+                    i {
+                        font-size: $font-size-p;
+                    }
                 }
                 h3 {
                     font-size: $font-size-p;
