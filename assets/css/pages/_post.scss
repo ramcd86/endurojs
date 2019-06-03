@@ -6,11 +6,16 @@
         .quill-container {
             h2 {
                 display: block;
-                width: 80%;
-                margin-left: 10%;
+                width: 90%;
+                margin-left: 5%;
                 font-family: $font-headers;
-                font-size: $font-size-h2;
+                font-size: $font-size-h3;
                 font-weight: 600;
+                letter-spacing: 0px;
+                background-color: $white;
+                color: $mauve;
+                padding: 5px;
+                border-left: 5px solid $strawberry;
             }
         }
         .header-image {

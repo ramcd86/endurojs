@@ -1,6 +1,10 @@
 .container--index {
     width: 100%;
     display: block;
+    a {
+        color: $dark-base;
+        text-decoration: none;
+    }
     .container {
         .quote-block {
             h2 {
