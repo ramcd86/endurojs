@@ -4,7 +4,6 @@
 	"babel": {
 		"presets": ["env"]
 	},
-	"port": "38888",
 	"bricks": {
 		"enduro_quill": {
 			"toolbar": [

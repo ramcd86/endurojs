@@ -8,6 +8,9 @@
     border-top: 10px solid $smoke;
     box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
     font-weight: 100;
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
     .page-title {
         color: $white;
         font-size: 30px;
@@ -41,9 +44,11 @@
         cursor: pointer;
     }
     .nav-items {
-        font-family: $font-headers;
+        font-family: $font-body;
         display: inline-block;
         color: $white;
+        font-size: 18px;
+        font-weight: 600;
         text-shadow: 0px 1px 3px #000;
         padding: { 
             left: 0px;
@@ -54,6 +59,121 @@
             left: 5px;
             right: 5px;
         }
+        text-decoration: none;
+        line-height: 10px;
+        border-bottom: 0px solid $smoke;
+        transition: color 0.3s ease;
+        &:hover {
+            animation: drop_border 0.2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            color: #fff;
+            @keyframes drop_border {
+                0% {
+                    color: $white;
+                }
+                100% {
+                    color: $strawberry;
+                }
+            }
+        }
+        cursor: pointer;
+    }
+}
+
+.container--header-mobile {
+
+    width: 100%;
+    display: none;
+    height: 100px;
+    background-color: $dark-base;
+    margin-bottom: 30px; 
+    border-bottom: 0px solid $strawberry;
+    border-top: 10px solid $smoke;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
+    font-weight: 100;
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+    .page-title {
+        color: $white;
+        font-size: 30px;
+        display: inline-block;
+        font-weight: 900;
+        padding: {
+            left: 10px;
+            right: 10px;
+            top: 25px;
+        }
+        font-family: $font-headers;
+        text-shadow: 0px 1px 3px #000;
+        letter-spacing: 0px;
+        transition: color 0.3s ease;
+        i {
+            font-size: 24px;
+        }
+        &:hover {
+            animation: drop_borders 0.2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            @keyframes drop_borders {
+                0% {
+                    color: $white;
+                }
+                100% {
+                    color: $strawberry;
+                }
+            }
+        }
+        cursor: pointer;
+    }
+    .mobile-menu-link {
+        display: block;
+        height: 90px;
+        color: $white !important;
+        i {
+            font-size: 30px;
+            margin-top: 25px;
+            margin-right: 10px;
+            text-shadow: 0px 1px 3px #000;       
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            top: 85px;
+            left: -50vw;
+            width: 100vw;
+            padding: {
+                top: 20px;
+                bottom: 20px;
+            }
+            background-color: $dark-base;
+            color: $white;
+            text-align: center;
+            box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
+        }
+        &:hover {
+            .submenu {
+                display: block;
+            }
+        }
+    }
+    .nav-items {
+        font-family: $font-body;
+        display: block;
+        color: $white;
+        text-shadow: 0px 1px 3px #000;
+        padding: { 
+            left: 0px;
+            right: 0px;
+        }
+        margin: {
+            top: 30px;
+            bottom: 30px;
+        }
+        font-size: 24px;
+        font-weight: 600;
         text-decoration: none;
         line-height: 10px;
         border-bottom: 0px solid $smoke;
