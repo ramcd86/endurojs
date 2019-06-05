@@ -7,14 +7,27 @@
     }
     .container {
         .quote-block {
+            i {
+                display: inline-block;
+                width: 5%;
+                color: $strawberry;
+                @include media-breakpoint-down (sm) {
+                    width: 12%;
+                }
+            }
             h2 {
                 margin-top: 40px;
-                display: block;
+                display: inline-block;
+                width: 100%;
                 font-family: $font-headers;
-                font-size: $font-size-h3;
+                font-size: $font-size-h2;
                 text-align: left;
                 letter-spacing: -1px;
-                margin-bottom: 10px;
+                line-height: 45px;
+                margin-bottom: 15px;
+                font-weight: 600;
+                padding-bottom: 15px;
+                border-bottom: 1px solid $strawberry;
             }
             h3 {
                 display: block;
@@ -24,7 +37,8 @@
                 text-align: right;
                 letter-spacing: -1px;
                 margin-bottom: 40px;
-                border-bottom: 5px solid $black;
+                padding-bottom: 10px;
+                border-bottom: 5px solid $smoke;
                 font-weight: 600;
             }
         }

@@ -3,10 +3,11 @@
     display: block;
     min-height: 100px;
     background-color: $dark-base;
+    background-image: url('/assets/img/headbg3.png');
     margin-bottom: 30px; 
     border-bottom: 0px solid $strawberry;
     border-top: 10px solid $black;
-    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
+    // box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
     font-weight: 100;
     @include media-breakpoint-down(sm) {
         display: none;
