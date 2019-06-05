@@ -8,7 +8,6 @@ class MainComponent {
     }
 
     init() {
-        console.log(this.quotes);
         if (this.quotesBlock) {
             this.quotePopulator();
         }
