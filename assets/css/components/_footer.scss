@@ -3,11 +3,13 @@
     display: block;
     min-height: 300px;
     background-color: $dark-base;
-    border-bottom: 10px solid $black;
+    border-bottom: 50px solid $lipstick;
     background-image: url('/assets/img/headbg3.png');
     // box-shadow: 0 -20px 100px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.22);
     font-weight: 100;
     .page-footer {
+        width: 100%;
+        border-bottom: 1px solid $strawberry;
         color: $white;
         font-size: 30px;
         display: inline-block;
@@ -15,7 +17,8 @@
         padding: {
             left: 10px;
             right: 10px;
-            top: 120px;
+            top: 100px;
+            bottom: 20px;
         }
         font-family: $font-headers;
         text-shadow: 0px 1px 3px #000;
