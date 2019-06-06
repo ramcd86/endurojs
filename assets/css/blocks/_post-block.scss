@@ -11,7 +11,7 @@
             }
         }
         margin-bottom: 30px;
-        height: 40vh;
+        height: 50vh;
         max-height: 420px;
         position: relative;
         // border: 1px dotted rgb(204, 204, 204);
@@ -329,7 +329,7 @@
                 max-width: 50%;
                 order: 2;
                 // height: 39.5vh;
-                height: calc(40vh - 20px);
+                height: calc(50vh - 20px);
                 max-height: 400px;
                 z-index: 1;
                 @include media-breakpoint-down(sm) {
