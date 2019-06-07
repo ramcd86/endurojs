@@ -8,6 +8,21 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<meta name="description" content="Bell & Weight is a blog, and opinion site commenting on contemporary digital politics and social media.">
 		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" >
+		<script>
+        if (location.search.indexOf(param + '=') !== -1) {
+                var replace = '';
+                try {
+                        var url = new URL(location);
+                        url.searchParams.delete(param);
+                        replace = url.href;
+                } catch (ex) {
+                        var regExp = new RegExp('[?&]' + param + '=.*$');
+                        replace = location.search.replace(regExp, '');
+                        replace = location.pathname + replace + location.hash;
+                }
+                history.replaceState(null, '', replace);
+        }
+		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93481615-2"></script>
 		<script>
