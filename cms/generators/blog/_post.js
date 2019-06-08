@@ -4,6 +4,7 @@
 		date: '01/01/2000',
 		$date_type: 'date',
 		tagline: 'Template Tagline',
+		canon_link: 'HREF',
 		$background_image_type: 'image',
 		background_image: '/remote/direct_uploads/1559566655_js.jpg',
 		display_options: '@@global.blog_display.Published',

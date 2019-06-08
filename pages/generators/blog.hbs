@@ -1,10 +1,14 @@
 {{>header}}
-
+{{#with blog_post}}
+<title>{{title}}</title>
+<link rel="canonical" href="{{{canon_link}}}" />
+{{/with}}
 
 	<div class="container-fluid container--post">
         <div class="container">
         {{#with blog_post}}
-        	<title>{{title}}</title>
+        	
+
             <div class="row {{display_options}}">
                 <div class="col-12 offset-0 col-md-10 offset-md-1 header-image">
                     <img class="img-fluid" src="{{{background_image}}}" alt="{{title}}"/>
