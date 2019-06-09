@@ -2,6 +2,23 @@
 {{#with blog_post}}
 <title>{{title}}</title>
 <link rel="canonical" href="{{{canon_link}}}" />
+    <meta property="og:url"           content="{{{canon_link}}}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{title}}" />
+    <meta property="og:description"   content="Bell and Weight" />
+    <meta property="og:image"         content="{{{background_image}}}" />
+    <meta name="twitter:widgets:theme" content="light">
+    <meta name="twitter:widgets:link-color" content="#55acee">
+    <meta name="twitter:widgets:border-color" content="#55acee">
+<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 {{/with}}
 
 	<div class="container-fluid container--post">
@@ -12,11 +29,23 @@
             <div class="row {{display_options}}">
                 <div class="col-12 offset-0 col-md-10 offset-md-1 header-image">
                     <img class="img-fluid" src="{{{background_image}}}" alt="{{title}}"/>
+
                 </div>
                 <div class="col-12 offset-0 col-md-10 offset-md-1">
                     <h1>{{title}}</h1>
                     <h2><i class="fas fa-feather-alt"></i> {{tagline}}</h2>
                     <h3><i class="far fa-clock"></i> {{date}}</h3>
+                    <div style="display: block; text-align: right; margin-bottom: 40px; min-height: 30px; vertical-align: top !important;">
+                            <a style="vertical-align: top !important;" class="twitter-share-button"
+                            href="https://twitter.com/intent/tweet?text={{title}}"
+                            data-size="small">
+                            Tweet</a>
+                            </br>
+                            <div style="vertical-align: top !important;" class="fb-share-button" 
+                                data-href="{{{canon_link}}}" 
+                                data-layout="button_count">
+                            </div>
+                        </div>
                     <div class="quill-container">
                         {{{post}}}
                     </div>
@@ -25,7 +54,7 @@
             {{/with}}
             <div id="disqus_thread"></div>
             <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
+            (function() {
             var d = document, s = d.createElement('script');
             s.src = 'https://bellandweight.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
