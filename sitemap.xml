@@ -1,24 +1,32 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
- <!--
- created with Free Online Sitemap Generator www.xml-sitemaps.com 
--->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://bellandweight.com/</loc>
-<lastmod>2019-06-09T20:47:59+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://bellandweight.com/</loc>
+  <lastmod>2019-06-10T19:43:11+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>
-https://bellandweight.com/blog/the-stupid-game-were-all-supposed-to-play
-</loc>
-<lastmod>2019-06-09T20:47:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://bellandweight.com/blog/a-funny-story-about-the-time-everyone-got-owned</loc>
+  <lastmod>2019-06-10T19:43:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://bellandweight.com/blog/pushing-the-wheel-not-good-enough-for-you-pull-this-lever
-</loc>
-<lastmod>2019-06-09T20:47:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://bellandweight.com/blog/the-stupid-game-were-all-supposed-to-play</loc>
+  <lastmod>2019-06-10T19:43:11+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://bellandweight.com/blog/pushing-the-wheel-not-good-enough-for-you-pull-this-lever</loc>
+  <lastmod>2019-06-10T19:43:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
